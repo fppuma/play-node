@@ -58,6 +58,32 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Dockerize
+This section is based on
+- https://www.tomray.dev/nestjs-docker-production
+- https://www.youtube.com/watch?v=CV_Uf3Dq-EU
+
+Create and confiure these file:
+```bash
+touch Dockerfile
+touch .dockerignore
+```
+
+Create the image:
+```bash
+docker build -t play-node:1.0.0 
+```
+
+Run the image:
+```bash
+docker run -p 3030:3030 play-node:1.0.0
+```
+
+Check the app:
+```bash
+curl localhost:3030
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
