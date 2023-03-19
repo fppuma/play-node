@@ -63,7 +63,7 @@ This section is based on
 - https://www.tomray.dev/nestjs-docker-production
 - https://www.youtube.com/watch?v=CV_Uf3Dq-EU
 
-Create and confiure these file:
+Create and configure these file:
 ```bash
 touch Dockerfile
 touch .dockerignore
