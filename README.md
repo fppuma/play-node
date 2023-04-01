@@ -74,6 +74,11 @@ Create the image:
 docker build -t play-node:1.0.0 
 ```
 
+Check the image
+```bash
+docker images | grep play-node
+```
+
 Run the image:
 ```bash
 docker run -p 3030:3030 play-node:1.0.0
